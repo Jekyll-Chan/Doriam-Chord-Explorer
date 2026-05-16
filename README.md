@@ -1,7 +1,7 @@
 # 🎹 Doriam the Chord Explorer
 
 > Interactive piano chord explorer built on Music Theory — all diatonic chords, 7th extensions, and common progressions for every key, with real piano audio playback.
-> Feel free to contact me about Doriam 💖 : flyawaypencil480@gmail.com
+> 
 > “Hey，有个男孩的曾经，小小的手和老钢琴，故事展开了美丽” ———— 《Black Keys》JJ Lin
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
@@ -52,3 +52,5 @@ Open `http://localhost:5000` in your browser 🎯
 
 ## Credits
 Piano samples: [Salamander Grand Piano](https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html) by Alexander Holm (CC BY 3.0)
+
+> Feel free to contact me about Doriam 💖 : flyawaypencil480@gmail.com
