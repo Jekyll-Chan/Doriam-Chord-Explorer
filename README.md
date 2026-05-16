@@ -2,6 +2,7 @@
 
 > Interactive piano chord explorer built on Music Theory — all diatonic chords, 7th extensions, and common progressions for every key, with real piano audio playback.
 > Feel free to contact me about Doriam 💖 : flyawaypencil480@gmail.com
+> “Hey，有个男孩的曾经，小小的手和老钢琴，故事展开了美丽” ———— 《Black Keys》JJ Lin
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
 ![Flask](https://img.shields.io/badge/Flask-3.x-lightgrey?logo=flask)
