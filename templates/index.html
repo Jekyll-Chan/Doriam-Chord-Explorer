@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doriam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-mark">♩</div>
+      <div class="logo-text">
+        <span class="logo-title">Doriam</span>
+        <span class="logo-sub">By Jekyll Chan</span>
+      </div>
+    </div>
+
+    <nav class="header-controls">
+      <div class="ctrl-group">
+        <label class="ctrl-label">Key</label>
+        <select id="key-select" class="ctrl-select"></select>
+      </div>
+      <div class="ctrl-group">
+        <label class="ctrl-label">Scale</label>
+        <select id="scale-select" class="ctrl-select"></select>
+      </div>
+      <div class="ctrl-group">
+        <label class="ctrl-label">Octave</label>
+        <select id="octave-select" class="ctrl-select">
+          <option value="3">3</option>
+          <option value="4" selected>4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <label class="toggle-wrap">
+        <input type="checkbox" id="sevenths-toggle">
+        <span class="toggle-pill"></span>
+        <span class="toggle-text">7ths</span>
+      </label>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+
+  <!-- Scale strip -->
+  <div class="scale-strip">
+    <span class="strip-label">Scale notes</span>
+    <div class="scale-chips" id="scale-chips"></div>
+    <div class="strip-key-badge" id="key-badge">C major</div>
+  </div>
+
+  <!-- Piano -->
+  <section class="section piano-section">
+    <div class="piano-scroll">
+      <div class="piano-keyboard" id="piano-keyboard"></div>
+    </div>
+    <div class="piano-footer">
+      <span class="piano-hint">Click a key · Select a chord below to highlight</span>
+    </div>
+  </section>
+
+  <!-- Diatonic chords -->
+  <section class="section">
+    <div class="section-head">
+      <h2 class="section-title">Diatonic Chords</h2>
+      <span class="section-sub" id="degree-hint">Click a card to hear & highlight</span>
+    </div>
+    <div class="chord-grid" id="chord-grid"></div>
+  </section>
+
+  <!-- Progressions -->
+  <section class="section">
+    <div class="section-head">
+      <h2 class="section-title">Progressions</h2>
+    </div>
+    <div class="prog-pill-row" id="prog-pills"></div>
+
+    <div class="player-panel" id="player-panel" style="display:none">
+      <div class="prog-sequence" id="prog-sequence"></div>
+      <div class="player-controls">
+        <div class="bpm-wrap">
+          <span class="ctrl-label">BPM <em id="bpm-val">80</em></span>
+          <input type="range" id="bpm-slider" min="40" max="200" value="80" class="slider">
+        </div>
+        <div class="transport-btns">
+          <button id="play-btn" class="btn btn-play">▶ Play</button>
+          <button id="loop-btn" class="btn btn-loop">↺</button>
+          <button id="stop-btn" class="btn btn-stop">■</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Loading -->
+<div class="loader" id="loader">
+  <div class="loader-card">
+    <div class="loader-piano">
+      <div class="lp-key"></div><div class="lp-key b"></div>
+      <div class="lp-key"></div><div class="lp-key b"></div>
+      <div class="lp-key"></div>
+      <div class="lp-key"></div><div class="lp-key b"></div>
+      <div class="lp-key"></div>
+    </div>
+    <p class="loader-text">Loading piano samples…</p>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
