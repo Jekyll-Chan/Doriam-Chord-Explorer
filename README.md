@@ -1,6 +1,7 @@
 # 🎹 Doriam the Chord Explorer
 
 > Interactive piano chord explorer built on Music Theory — all diatonic chords, 7th extensions, and common progressions for every key, with real piano audio playback.
+> Feel free to contact me about Doriam 💖 : flyawaypencil480@gmail.com
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
 ![Flask](https://img.shields.io/badge/Flask-3.x-lightgrey?logo=flask)
@@ -21,13 +22,13 @@
 ## Quick Start
 
 ```bash
-git clone https://github.com/<you>/chord-explorer
-cd chord-explorer
-pip install -r requirements.txt
+git clone this repo
+cd into your prepared folder
+pip install flask
 python app.py
 ```
 
-Open `http://localhost:5000` in your browser.
+Open `http://localhost:5000` in your browser 🎯
 
 ## Music Theory Coverage
 
